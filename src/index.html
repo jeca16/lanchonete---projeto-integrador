@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <script src="./js/main.js" defer></script>
+    <link rel="icon" href="./img/logo.png">
+    <title> sabor & prazer </title>
+</head>
+<body class=" bg-[#FDEDD5] w-screen h-screen" id="body">
+    <header class="flex flex-row justify-between ">
+        
+        <div class="menu" id="openMenu">
+            <img  class="w-20 h-20" src="./img/menu navegação.png" alt="">
+        </div>
+
+        <!-- <div class="menu" id="menu">
+            <div class="closeMenu" id="closeMenu">
+                <img class="w-24 h-24" src="./img/menu navegação.png" alt="">
+            </div>
+        </div> -->
+
+        <div class="title font-acme text-[#D1A86B] text-6xl place-self-center"> Estoque da loja </div>
+
+        <div></div>
+
+    </header>
+    <main class="flex w-full items-center justify-center h-[70%]">
+        <table class="table-auto bg-white border-separate border border-slate-400 w-[800px] h-[400px]">
+            <thead>
+                <tr>
+                    <th class="border border-slate-400 ">Nome</th>
+                    <th class="border border-slate-400">Marca</th>
+                    <th class="border border-slate-400">Quantidade</th>
+                    <th class="border border-slate-400">Validade <button class="pl-6"> <img src="./img/adicionar produto.png" class="w-5 h-5" alt=""></button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-slate-400 pl-14">tomate</td>
+                    <td class="border border-slate-400 pl-14">feira do bairro</td>
+                    <td class="border border-slate-400 pl-14">5 unidades</td>
+                    <td class="border border-slate-400 pl-14">23/06/24 <button class="pl-6"><img src="./img/editar produto.png" class="w-5 h-5" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-400 pl-14">tomate</td>
+                    <td class="border border-slate-400 pl-14">feira do bairro</td>
+                    <td class="border border-slate-400 pl-14">5 unidades</td>
+                    <td class="border border-slate-400 pl-14">23/06/24 <button class="pl-6"><img src="./img/editar produto.png" class="w-5 h-5" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-400 pl-14">tomate</td>
+                    <td class="border border-slate-400 pl-14">feira do bairro</td>
+                    <td class="border border-slate-400 pl-14">5 unidades </td>
+                    <td class="border border-slate-400 pl-14 ">23/06/24 <button class="pl-6"><img src="./img/editar produto.png" class="w-5 h-5" alt=""></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
