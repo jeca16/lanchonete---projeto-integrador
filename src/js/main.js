@@ -1,14 +1,13 @@
 'use strict'
 
-const openMenuBotao = document.getElementById('openMenu')
-const closeMenuBtn = document.getElementById('close-menu-btn')
+const openMenuBtn = document.getElementById('openMenu')
+const closeMenuBtn = document.getElementById('closeMenu')
 const menu = document.getElementById('menu')
 const bodyChange = document.getElementById('body')
 
-
 const openMenu = function () {
-    menu.classlist.add('active')
-    bodyChange.classlist.add('change')
+    menu.classList.add('active')
+    bodyChange.classList.add('change')
 }
 
 const closeMenu = function () {
@@ -16,5 +15,5 @@ const closeMenu = function () {
     bodyChange.classList.remove('change')
 }
 
-openMenuBotao.addEventListener('click', openMenu)
+openMenuBtn.addEventListener('click', openMenu)
 closeMenuBtn.addEventListener('click', closeMenu)

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body.change{
+    /* opacity: 0.3; */
+    transition: .4s all ease-in-out;
+}
+.menu{
+    background-color: #D1A86B;
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+    padding-top: 128px;
+    display: flex;
+    text-align: left;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transform: translateX(-140%);
+    transition: all .3s ease-in-out;
+    box-shadow: rgb(124, 124, 124) 4px 0 4px 0px;
+    z-index: 1;
+    /* overflow-x: hidden; */
+}
+
+.menu.active{
+    transform: translateX(0);
+}
+
+.closeMenu{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
