@@ -602,6 +602,18 @@ video {
   height: 8vh;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -632,6 +644,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .table-auto {
@@ -666,12 +686,32 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-20 {
   gap: 5rem;
 }
 
 .gap-14 {
   gap: 3.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-96 {
+  gap: 24rem;
 }
 
 .place-self-center {
@@ -684,6 +724,14 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-\[36px\] {
+  border-radius: 36px;
+}
+
+.rounded-\[26px\] {
+  border-radius: 26px;
 }
 
 .border {
@@ -727,6 +775,30 @@ video {
   padding-left: 1.5rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pl-\[20px\] {
+  padding-left: 20px;
+}
+
+.pr-\[20px\] {
+  padding-right: 20px;
+}
+
 .font-acme {
   font-family: Acme, sans-serif;
 }
@@ -753,4 +825,9 @@ video {
 
 .text-\[\#FFFF\] {
   color: #FFFF;
+}
+
+.text-\[\#5EAA65\] {
+  --tw-text-opacity: 1;
+  color: rgb(94 170 101 / var(--tw-text-opacity));
 }
