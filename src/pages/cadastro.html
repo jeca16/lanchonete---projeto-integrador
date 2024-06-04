@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <script src="../js/cadastro.js" defer></script>
     <link rel="stylesheet" href="../output.css">
     <link rel="icon" href="../img/logo.png">
     <title> Sabor & Prazer </title>
@@ -16,12 +17,12 @@
 
     <div class="login flex flex-col bg-white rounded-[38px] w-[25vw] h-[50vh] items-center justify-center gap-[44px]"> 
         <h1 class="font-acme text-[#704608] text-3xl"> cadastre-se </h1>
-        <input type="text" class="w-[15vw] text-[#704608] outline-none" placeholder="username"> 
-        <input type="text" class="w-[15vw] text-[#704608] outline-none" placeholder="email"> 
+        <input type="text" class="w-[15vw] text-[#704608] outline-none" placeholder="username" id="user"> 
+        <input type="text" class="w-[15vw] text-[#704608] outline-none" placeholder="email" id="email"> 
         <input type="password" class="w-[15vw] text-[#704608] outline-none" placeholder="senha" id="senha"> 
-        <input type="password" class="w-[15vw] text-[#704608] outline-none" placeholder="confirme sua senha"> 
+        <input type="password" class="w-[15vw] text-[#704608] outline-none" placeholder="confirme sua senha" id="confirmSenha"> 
         <!-- <button class=" w-[15px] h-[15px] bg-black" id="verSenha"></button> -->
-        <a href="./estoque.html" target="_blank"><button class="w-[18vw] h-[5vh] bg-[#704608] rounded-full font-acme text-2xl text-white"> entrar </button></a>
+        <button onclick="cadastrarUsuario()" class="w-[18vw] h-[5vh] bg-[#704608] rounded-full font-acme text-2xl text-white"> entrar </button>
     </div>
     
 </body>
