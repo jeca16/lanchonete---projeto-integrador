@@ -6,74 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="./css/estoque.css">
-    <script src="./js/main.js" defer></script>
+    <script src="./js/botao.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
     <link rel="icon" href="./img/logo.png">
     <title> Sabor & Prazer </title>
 </head>
-<body class=" bg-[#FDEDD5] w-screen h-screen" id="body">
-    <header class="flex flex-row justify-between ">
-        
-        <div class="openMenu" id="openMenu">
-            <img  class="w-20 h-20" src="./img/menu navegação.png" alt="">
-        </div>
+<body class=" bg-[#FDEDD5] w-screen h-screen flex justify-center items-center flex-col gap-32">
 
-        <div class="menu h-1/2 flex flex-row " id="menu">
-            
-            <ul>
-                <li>
-                    <div class="dropdown flex flex-col items-center pl-10" id="dropdown">
-                        <a href="./index.html"><span class="font-acme text-[#704608] text-3xl flex flex-col items-center"> <img src="./img/estoque.png" class="w-14 h-16" alt="">Estoque</span></a>
-                        <a href="./pages/pedidos.html" target="_blank"><span class="font-acme text-[#704608] text-3xl flex flex-col items-center"> <img src="./img/pedidos.png" class="w-20 h-20" alt="">Pedidos</span></a>
-                        <a href="./pages/cliente.html" target="_blank"><span class="font-acme text-[#704608] text-3xl flex flex-col items-center"> <img src="./img/clientes.png" class="w-15 h-15" alt="">clientes</span></a>
-                        <a href="./pages/vendas.html" target="_blank"><span class="font-acme text-[#704608] text-3xl flex flex-col items-center"> <img src="./img/vendas.png" class="w-14 h-16" alt="">vendas</span></a>
-                        <a href="./pages/promocoes.html" target="_blank"><span class="font-acme text-[#704608] text-3xl flex flex-col items-center"> <img src="./img/promocoes.png" class="w-15 h-16" alt="">promoções</span></a>
-                        <a href="./pages/produtos.html" target="_blank"><span class="font-acme text-[#704608] text-3xl flex flex-col items-center"> <img src="./img/produtos.png" class="w-14 h-16" alt="">produtos</span></a>
-                    </div>
-                </li>
-            </ul>
-            <div class="closeMenu flex items-start" id="closeMenu">
-                <img class="w-20 h-20 " src="./img/menu navegação.png" alt="">
-            </div>
-        </div>
+    <h1 class=" font-acme text-[#D1A86B] text-8xl"> Sabor & Prazer</h1>
 
-        <div class="title font-acme text-[#D1A86B] text-6xl place-self-center"> Estoque da loja </div>
-
-        <div></div>
-
-    </header>
-    <main class="flex w-full items-center justify-center h-[70%]">
-        <table class="table-auto bg-white border-separate border border-slate-400 w-[800px] h-[400px]">
-            <thead>
-                <tr>
-                    <th class="border border-slate-400 ">Nome</th>
-                    <th class="border border-slate-400">Marca</th>
-                    <th class="border border-slate-400">Quantidade</th>
-                    <th class="border border-slate-400 flex flex-row justify-center">Validade <a href="./pages/adicionarIngrediente.html" target="_blank"><button class="pl-6"> <img src="./img/adicionar produto.png" class="w-5 h-5" alt=""></button></a></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="border border-slate-400 pl-14"><a href="./pages/mostarIngrediente.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 pl-14">feira do bairro</td>
-                    <td class="border border-slate-400 pl-14">5 unidades</td>
-                    <td class="border border-slate-400 pl-14">23/06/24 <a href="./pages/atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="./img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 pl-14"> <a href="./pages/mostarIngrediente" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 pl-14">feira do bairro</td>
-                    <td class="border border-slate-400 pl-14">5 unidades</td>
-                    <td class="border border-slate-400 pl-14">23/06/24  <a href="./pages/atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="./img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 pl-14"> <a href="./pages/mostarIngrediente" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 pl-14">feira do bairro</td>
-                    <td class="border border-slate-400 pl-14">5 unidades </td>
-                    <td class="border border-slate-400 pl-14 ">23/06/24  <a href="./pages/atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="./img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+    <div class="login flex flex-col bg-white rounded-[38px] w-[20vw] h-[40vh] items-center justify-center gap-[44px]"> 
+        <h1 class="font-acme text-[#704608] text-3xl"> Login </h1>
+        <input type="text" class="w-[15vw] text-[#704608] outline-none" placeholder="email"> 
+        <input type="password" class="w-[15vw] text-[#704608] outline-none" placeholder="senha" id="senha"> 
+        <!-- <button class=" w-[15px] h-[15px] bg-black" id="verSenha"></button> -->
+        <a href="./pages/estoque.html" target="_blank"><button class="w-[18vw] h-[5vh] bg-[#704608] rounded-full font-acme text-2xl text-white"> entrar </button></a>
+    </div>
+    
 </body>
 </html>
