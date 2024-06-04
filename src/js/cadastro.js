@@ -34,3 +34,18 @@ async function cadastrarUsuario() {
     }
 }
 
+const eyeIcon = document.getElementById('eyeIcon')
+let senhaVisivel = false
+eyeIcon.addEventListener('click',()=>{
+    if(senhaVisivel){
+        document.getElementById('senha').setAttribute('type','password')
+        eyeIcon.src='https://www.svgrepo.com/show/524041/eye-closed.svg'
+        senhaVisivel = false
+    } else {
+        document.getElementById('senha').setAttribute('type','text')
+        eyeIcon.src='https://www.svgrepo.com/show/522847/eye.svg'
+        senhaVisivel = true
+    }
+})
+
+

@@ -638,6 +638,30 @@ video {
   height: 100vh;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[15\] {
+  height: 15;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
+}
+
+.h-\[vh\] {
+  height: vh;
+}
+
+.h-\[7vh\] {
+  height: 7vh;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -734,6 +758,10 @@ video {
   width: 13vw;
 }
 
+.w-\[17vw\] {
+  width: 17vw;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -828,6 +856,14 @@ video {
 
 .gap-\[800px\] {
   gap: 800px;
+}
+
+.gap-\[24px\] {
+  gap: 24px;
+}
+
+.gap-\[25px\] {
+  gap: 25px;
 }
 
 .place-self-center {
