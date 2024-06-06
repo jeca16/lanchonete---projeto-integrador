@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../output.css">
-    <script src="../js/atualizarIngrediente.js"></script>
+    <script src="../js/atualizarIngrediente.js" defer type="module"></script>
     <link rel="stylesheet" href="../css/editarIngrediente.css">
     <link rel="icon" href="../img/logo.png">
     <title>Sabor & Prazer</title>
@@ -14,15 +17,16 @@
         <a href="./estoque.html" ><img src="../img/voltar.png" alt=""></a>
     </header>
 
-    <main class="w-full">
-       <div class="info flex flex-col gap-14 items-center justify-center">
-        <div class="foto w-[250px] h-[250px] bg-white rounded-lg"></div>
+    <h1 class=" font-acme text-[#D1A86B] text-7xl items-center justify-center flex"> Atualize o ingrediente</h1>
 
-        <input type="text" class="w-[30vw] h-[5vh] rounded-full">
-        <input type="text" class="w-[30vw] h-[5vh] rounded-full">
-        <input type="date" class="w-[30vw] h-[5vh] rounded-full">
-        <input type="text" class="w-[30vw] h-[5vh] rounded-full">
-        <button class="w-[30vw] h-[8vh] bg-[#5EAA65] rounded-full text-[#FFFF] "> Atualizar produto</button>
+
+    <main class="w-full h-full flex items-center justify-center">
+       <div class="info flex flex-col gap-14">
+        <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="nome">
+        <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="marca">
+        <input type="date" class="w-[30vw] h-[5vh] rounded-full" id="Validade">
+        <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="quantidade">
+        <button class="w-[30vw] h-[8vh] bg-[#5EAA65] rounded-full text-[#FFFF] font-acme text-6xl"> Atualizar produto</button>
        </div>
     </main>
     

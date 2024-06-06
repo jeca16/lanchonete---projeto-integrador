@@ -1,4 +1,4 @@
-import { getIngrediente, postIngrediente, putIngrediente, deleteIngrediente} from "./ingrediente.js";
+import { getIngrediente, postIngrediente, putIngrediente, deleteIngrediente, validarData} from "./ingrediente.js";
 
 function criarTabela(ingrediente) {
     const linha = document.createElement('tr')
@@ -11,7 +11,8 @@ function criarTabela(ingrediente) {
     nome.textContent = ingrediente.nome_ingrediente
     marca.textContent = ingrediente.marca_ingredientes
     quantidade.textContent = ingrediente.quantidade_ingredientes
-    validade.textContent = ingrediente.data_validade
+    validade.textContent = validarData(ingrediente.data_validade)
+
 
     nome.classList.add('border', 'border-slate-400', 'pl-10', 'cursor-pointer')
     marca.classList.add('border', 'border-slate-400', 'pl-10')

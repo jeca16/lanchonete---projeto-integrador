@@ -40,7 +40,7 @@ async function cadastrarUsuario() {
 
 
             if (validaCadastro.status_code == 201) {
-                window.location.href = './estoque.html'
+                window.location.href = '../index.html'
             } else {
                 alert(validaCadastro.status_code)
             }
@@ -60,6 +60,21 @@ eyeIcon.addEventListener('click',()=>{
         document.getElementById('senha').setAttribute('type','text')
         eyeIcon.src='https://www.svgrepo.com/show/522847/eye.svg'
         senhaVisivel = true
+    }
+})
+
+
+const eyeIcon2 = document.getElementById('eyeIcon2')
+let senhaVisivel2 = false
+eyeIcon2.addEventListener('click',()=>{
+    if(senhaVisivel2){
+        document.getElementById('confirmSenha').setAttribute('type','password')
+        eyeIcon2.src='https://www.svgrepo.com/show/524041/eye-closed.svg'
+        senhaVisivel2 = false
+    } else {
+        document.getElementById('confirmSenha').setAttribute('type','text')
+        eyeIcon2.src='https://www.svgrepo.com/show/522847/eye.svg'
+        senhaVisivel2 = true
     }
 })
 
