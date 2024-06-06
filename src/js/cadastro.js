@@ -13,23 +13,38 @@ async function cadastrarUsuario() {
         if (confirmarSenha != senha) {
             alert('As senhas informadas não são iguais')
         }else{
+
+            let validaCadastro = '';
+
             try {
                 const novoUsuario = {
-                    nome: nome,
-                    email: email,
-                    senha: senha
+                    nomeFucionario: nome,
+                    emailFuncionario: email,
+                    senhaFuncionario: senha
                 }
-                await fetch('http://back-login.vercel.app/usuarios', {
+
+                let resultAPI = await fetch('http://localhost:8080/v1/lanchonete/funcionario', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify(novoUsuario)
                 })
-                window.location.href = './estoque.html'
+
+                validaCadastro = await resultAPI.json()
+
+
             } catch (error) {
                 console.log(error)
             }
+
+
+            if (validaCadastro.status_code == 201) {
+                window.location.href = './estoque.html'
+            } else {
+                alert(validaCadastro.status_code)
+            }
+
         }
     }
 }

@@ -6,10 +6,11 @@ async function validarLogin() {
     let logado = false
 
     try {
-        const users = await fetch('http://back-login.vercel.app/usuarios')
+        const users = await fetch('http://localhost:8080/v1/lanchonete/funcionarios')
         const listUsers = await users.json()
-        listUsers.forEach((user) => {
-            if (email === user.email && senha === user.senha) {
+        console.log(listUsers)
+        listUsers.nomeFuncionario.forEach((user) => {
+            if (email === user.emailFuncionario && senha === user.senhaFuncionario) {
                 logado = true
                 localStorage.setItem("idusuario", user.id)
                 window.location.href = './pages/estoque.html'

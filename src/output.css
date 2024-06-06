@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .flex {
   display: flex;
 }
@@ -564,6 +568,14 @@ video {
 
 .h-1\/2 {
   height: 50%;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-16 {
@@ -602,6 +614,10 @@ video {
   height: 250px;
 }
 
+.h-\[35px\] {
+  height: 35px;
+}
+
 .h-\[3vh\] {
   height: 3vh;
 }
@@ -610,8 +626,16 @@ video {
   height: 400px;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[40vh\] {
   height: 40vh;
+}
+
+.h-\[50\%\] {
+  height: 50%;
 }
 
 .h-\[50vh\] {
@@ -638,28 +662,8 @@ video {
   height: 100vh;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-\[15\] {
-  height: 15;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[10vh\] {
-  height: 10vh;
-}
-
-.h-\[vh\] {
-  height: vh;
-}
-
-.h-\[7vh\] {
-  height: 7vh;
+.w-12 {
+  width: 3rem;
 }
 
 .w-14 {
@@ -682,8 +686,16 @@ video {
   width: 1.25rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[13vw\] {
+  width: 13vw;
 }
 
 .w-\[15px\] {
@@ -692,6 +704,10 @@ video {
 
 .w-\[15vw\] {
   width: 15vw;
+}
+
+.w-\[17vw\] {
+  width: 17vw;
 }
 
 .w-\[18vw\] {
@@ -726,8 +742,9 @@ video {
   width: 800px;
 }
 
-.w-\[8vw\] {
-  width: 8vw;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -736,30 +753,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[10svw\] {
-  width: 10svw;
-}
-
-.w-\[10vw\] {
-  width: 10vw;
-}
-
-.w-\[13Svw\] {
-  width: 13Svw;
-}
-
-.w-\[1vw\] {
-  width: 1vw;
-}
-
-.w-\[13vw\] {
-  width: 13vw;
-}
-
-.w-\[17vw\] {
-  width: 17vw;
 }
 
 .table-auto {
@@ -802,6 +795,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-14 {
   gap: 3.5rem;
 }
@@ -828,6 +825,10 @@ video {
 
 .gap-60 {
   gap: 15rem;
+}
+
+.gap-\[25px\] {
+  gap: 25px;
 }
 
 .gap-\[40px\] {
@@ -858,16 +859,16 @@ video {
   gap: 800px;
 }
 
-.gap-\[24px\] {
-  gap: 24px;
-}
-
-.gap-\[25px\] {
-  gap: 25px;
-}
-
 .place-self-center {
   place-self: center;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-\[26px\] {
@@ -922,10 +923,6 @@ video {
 
 .pl-10 {
   padding-left: 2.5rem;
-}
-
-.pl-14 {
-  padding-left: 3.5rem;
 }
 
 .pl-5 {

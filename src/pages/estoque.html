@@ -17,7 +17,7 @@
     <header class="flex flex-row justify-between ">
         
         <div class="openMenu" id="openMenu">
-            <img  class="w-20 h-20" src="../img/menu navegação.png" alt="">
+            <img  class="w-20 h-20 cursor-pointer" src="../img/menu navegação.png" alt="">
         </div>
 
         <div class="menu h-1/2 flex flex-row " id="menu">
@@ -35,7 +35,7 @@
                 </li>
             </ul>
             <div class="closeMenu flex items-start" id="closeMenu">
-                <img class="w-20 h-20 " src="../img/menu navegação.png" alt="">
+                <img class="w-20 h-20 cursor-pointer" src="../img/menu navegação.png" alt="">
             </div>
         </div>
 
@@ -45,36 +45,21 @@
 
     </header>
     <main class="flex w-full items-center justify-center h-[70%]">
-        <table class="table-auto bg-white border-separate border border-slate-400 w-[800px] h-[400px]">
-            <thead>
-                <tr>
-                    <th class="border border-slate-400 ">Nome</th>
-                    <th class="border border-slate-400">Marca</th>
-                    <th class="border border-slate-400">Quantidade</th>
-                    <th class="border border-slate-400 flex flex-row justify-center">Validade <a href="./adicionarIngrediente.html" target="_blank"><button class="pl-6"> <img src="../img/adicionar produto.png" class="w-5 h-5" alt=""></button></a></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="border border-slate-400 pl-14"><a href="./mostarIngrediente.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 pl-14">feira do bairro</td>
-                    <td class="border border-slate-400 pl-14">5 unidades</td>
-                    <td class="border border-slate-400 pl-14">23/06/24 <a href="./atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 pl-14"> <a href="./mostarIngrediente" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 pl-14">feira do bairro</td>
-                    <td class="border border-slate-400 pl-14">5 unidades</td>
-                    <td class="border border-slate-400 pl-14">23/06/24  <a href="./atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 pl-14"> <a href="./pages/mostarIngrediente" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 pl-14">feira do bairro</td>
-                    <td class="border border-slate-400 pl-14">5 unidades </td>
-                    <td class="border border-slate-400 pl-14 ">23/06/24  <a href="./pages/atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="flex w-fit items-start justify-center h-[50%] fixed overflow-y-scroll">
+            <table class="table-auto bg-white border-separate border border-slate-400 w-[800px] h-[400px] overflow-auto">
+                <thead>
+                    <tr>
+                        <th class="border border-slate-400 ">Nome</th>
+                        <th class="border border-slate-400">Marca</th>
+                        <th class="border border-slate-400">Quantidade</th>
+                        <th class="border border-slate-400 flex flex-row justify-center">Validade <button class="pl-6"> <img src="../img/adicionar produto.png" class="w-5 h-5" alt="" id="adicionar"></button></th>
+                    </tr>
+                </thead>
+                <tbody id="ingredientes">
+                    
+                </tbody>
+            </table>
+        </div>
     </main>
 </body>
 </html>
