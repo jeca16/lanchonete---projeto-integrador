@@ -18,6 +18,13 @@ function criarTabela(ingrediente) {
     marca.classList.add('border', 'border-slate-400', 'pl-10')
     quantidade.classList.add('border', 'border-slate-400', 'pl-10')
     validade.classList.add('border', 'border-slate-400', 'flex', 'h-16', 'gap-10', 'pl-10', 'items-center')
+
+    if (quantidade.textContent < 10) {
+        alert('produto em baixa')
+        quantidade.classList.add('text-[#da6565]')
+    } else {
+        
+    }
     
 
     divIcones.classList.add('divIcones', 'flex')

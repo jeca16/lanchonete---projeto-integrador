@@ -662,6 +662,10 @@ video {
   height: 100vh;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -759,6 +763,10 @@ video {
   width: 100vw;
 }
 
+.w-\[00px\] {
+  width: 00px;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -769,6 +777,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .flex-row {
@@ -934,6 +946,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -981,6 +998,11 @@ video {
 
 .text-8xl {
   font-size: 6rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 

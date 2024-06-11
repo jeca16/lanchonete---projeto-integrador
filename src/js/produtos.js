@@ -7,12 +7,12 @@ function criarTabela(produto) {
     const divIcones = document.createElement('div')
 
     nome.textContent = produto.nomeProduto
-    preco.textContent = "R$" + produto.precoProduto
+    preco.textContent = "R$ " + produto.precoProduto
    
 
 
     nome.classList.add('border', 'border-slate-400', 'pl-10')
-    preco.classList.add('border', 'border-slate-400', 'flex', 'h-16', 'gap-10', 'pl-10', 'items-center')
+    preco.classList.add('border', 'border-slate-400', 'flex', 'h-16', 'gap-10', 'pl-10', 'items-center', 'justufy-center')
     
 
     divIcones.classList.add('divIcones', 'flex')
