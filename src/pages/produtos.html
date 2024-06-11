@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../output.css">
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/estoque.css">
+    <script src="../js/produtos.js" defer type="module"></script>
     <script src="../js/main.js" defer></script>
     <title>Sabor & Prazer</title>
 </head>
@@ -50,42 +51,11 @@
             <thead>
                 <tr>
                     <th class="border border-slate-400 ">Nome</th>
-                    <th class="border border-slate-400 flex flex-row justify-center">preço <a href="./adicionarProduto.html" target="_blank"><button class="pl-6"> <img src="../img/adicionar produto.png" class="w-5 h-5" alt=""></button></a></th>
+                    <th class="border border-slate-400 flex flex-row justify-center">preço<button class="pl-6"> <img src="../img/adicionar produto.png" class="w-5 h-5" alt="" id="adicionar"></button></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400  "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400"><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400">R$20,00 <a href="./atualizarIngrediente.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarProduto.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 place-self-center ">R$20,00 <a href="./atualizarProduto.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
+            <tbody id="produtos">
+    
             </tbody>
         </table>
     </main>

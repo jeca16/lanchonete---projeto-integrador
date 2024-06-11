@@ -18,11 +18,10 @@ async function cadastrarUsuario() {
 
             try {
                 const novoUsuario = {
-                    nomeFucionario: nome,
+                    nomeFuncionario: nome,
+                    senhaFuncionario: senha,
                     emailFuncionario: email,
-                    senhaFuncionario: senha
                 }
-
                 let resultAPI = await fetch('http://localhost:8080/v1/lanchonete/funcionario', {
                     method: 'POST',
                     headers: {
@@ -32,7 +31,7 @@ async function cadastrarUsuario() {
                 })
 
                 validaCadastro = await resultAPI.json()
-
+                console.log(novoUsuario)
 
             } catch (error) {
                 console.log(error)

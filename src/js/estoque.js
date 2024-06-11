@@ -14,7 +14,7 @@ function criarTabela(ingrediente) {
     validade.textContent = validarData(ingrediente.data_validade)
 
 
-    nome.classList.add('border', 'border-slate-400', 'pl-10', 'cursor-pointer')
+    nome.classList.add('border', 'border-slate-400', 'pl-10')
     marca.classList.add('border', 'border-slate-400', 'pl-10')
     quantidade.classList.add('border', 'border-slate-400', 'pl-10')
     validade.classList.add('border', 'border-slate-400', 'flex', 'h-16', 'gap-10', 'pl-10', 'items-center')
@@ -40,10 +40,6 @@ function criarTabela(ingrediente) {
     iconeDeletar.addEventListener('click',()=>{
         deleteIngrediente(ingrediente.id_ingredientes)
         window.location.reload()
-    })
-
-    nome.addEventListener('click', ()=>{
-        window.location.href = '../pages/mostrarIngrediente.html'
     })
 
     iconeAtualizar.addEventListener('click',()=>{
