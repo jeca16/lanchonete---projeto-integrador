@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../output.css">
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/estoque.css">
+    <script src="../js/combos.js" defer type="module"></script>
     <script src="../js/main.js" defer></script>
     <title>Sabor & Prazer</title>
 </head>
@@ -16,7 +17,7 @@
     <header class="flex flex-row gap-[780px]">
         
         <div class="openMenu" id="openMenu">
-            <img  class="w-20 h-20" src="../img/menu navegação.png" alt="">
+            <img  class="w-20 h-20 cursor-pointer" src="../img/menu navegação.png" alt="">
         </div>
 
         <div class="menu h-1/2 flex flex-row " id="menu">
@@ -34,11 +35,11 @@
                 </li>
             </ul>
             <div class="closeMenu flex items-start" id="closeMenu">
-                <img class="w-20 h-20 " src="../img/menu navegação.png" alt="">
+                <img class="w-20 h-20 cursor-pointer " src="../img/menu navegação.png" alt="">
             </div>
         </div>
 
-        <div class="title font-acme text-[#D1A86B] text-6xl place-self-center"> Produtos </div>
+        <div class="title font-acme text-[#D1A86B] text-6xl place-self-center"> Combos </div>
 
         <div class="combos ">
             <a href="../pages/produtos.html"><img class="w-16 h-16 cursor-pointer" src="../img/produtos.png" alt=""></a>
@@ -46,48 +47,19 @@
 
     </header>
     <main class="flex w-full items-center justify-center h-[70%]">
-        <table class="table-auto bg-white border-separate border border-slate-400 w-[800px] h-[400px]">
-            <thead>
-                <tr>
-                    <th class="border border-slate-400 ">Nome</th>
-                    <th class="border border-slate-400 flex flex-row justify-center">preço <a href="./adicionarCombo.html" target="_blank"><button class="pl-6"> <img src="../img/adicionar produto.png" class="w-5 h-5" alt=""></button></a></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400  "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400"><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-                <tr>
-                    <td class="border border-slate-400 "><a href="./mostarCombo.html" target="_blank">tomate</a></td>
-                    <td class="border border-slate-400 place-self-center ">R$20,00 <a href="./atualizarCombo.html" target="_blank"> <button class="pl-6"><img src="../img/editar produto.png" class="w-5 h-5" alt=""></button></a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="flex w-fit items-start justify-center h-[50%] fixed overflow-y-scroll">
+            <table class="table-auto bg-white border-separate border border-slate-400 w-[800px] h-[600px]">
+                <thead>
+                    <tr>
+                        <th class="border border-slate-400 ">Nome</th>
+                        <th class="border border-slate-400 flex flex-row items-center justify-center">preço<button class="pl-6"> <img src="../img/adicionar produto.png" class="w-5 h-5" alt="" id="adicionar"></button></th>
+                    </tr>
+                </thead>
+                <tbody id="produtos">
+        
+                </tbody>
+            </table>
+           </div>
     </main>
 </body>
 </html>
