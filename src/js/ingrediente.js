@@ -229,3 +229,62 @@ export async function deleteCombo(ComboId){
     const response = await fetch(url, options)
     return response.ok
 }
+
+
+
+/**********************************promocoes**********************************/
+export async function getPromocao(){
+    const url = 'http://localhost:8080/v1/lanchonete/promocoes'
+    const response = await fetch (url)
+    const data = await response.json()
+    return data
+}
+
+export async function getPromocoes(promocaoId){
+    console.log(promocaoId)
+    const url = `http://localhost:8080/v1/lanchonete/promocoesId/${promocaoId}`
+    const response = await fetch (url)
+    const data = await response.json()
+    console.log(data);
+    return data
+}
+
+export async function postPromocao(promocao){
+    const url = `http://localhost:8080/v1/lanchonete/promocao`
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(promocao)
+    }
+    const response = await fetch(url, options)
+    return response.ok
+}
+
+
+export async function putPromocao(promocaoId, promocao){
+    const url = `http://localhost:8080/v1/lanchonete/editePromocao/${promocaoId}`
+    // console.log(ComboId);
+    // console.log(Combo)
+    const options = {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(promocao)
+    }
+    const response = await fetch(url, options)
+
+    return response.ok
+}
+
+export async function deletePromocao(promocaoId){
+    console.log(promocaoId)
+    const url = `http://localhost:8080/v1/lanchonete/promocao/${promocaoId}`
+    const options = {
+        method: 'DELETE',
+    }
+    const response = await fetch(url, options)
+    return response.ok
+}

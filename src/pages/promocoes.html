@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="../output.css">
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/estoque.css">
+    <script src="../js/promocoes.js" defer type="module"></script>
     <script src="../js/main.js" defer></script>
     <title>Sabor & Prazer</title>
 </head>
-<body class=" bg-[#FDEDD5] w-screen h-screen" id="body">
+<body class=" bg-[#FDEDD5] w-full h-screen" id="body">
     <header class="flex flex-row gap-[760px] ">
         
         <div class="openMenu" id="openMenu">
@@ -43,55 +44,12 @@
         <div></div>
 
     </header>
-    <main  class=" flex flex-row gap-60 items-center justify-center">
-        <div class="pendentes flex flex-col gap-[60px]">
-            <div class="w-[400px] h-[180px] bg-white flex flex-row rounded-[26px]">
-                <div class="info flex flex-col gap-3 pl-5">
-                    <h1>combo 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="info2 flex flex-row gap-56">
-                        <p>valor: R$50,00</p>
-                        <a href="./editarPromocao.html" target="_blank"><button ><img class="w-9 h-9" src="../img/editar produto.png" alt=""></button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="w-[400px] h-[180px] bg-white flex flex-row rounded-[26px]">
-                <div class="info flex flex-col gap-3 pl-5">
-                    <h1>combo 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="info2 flex flex-row gap-56">
-                        <p>valor: R$50,00</p>
-                        <a href="./editarPromocao.html" target="_blank"><button ><img class="w-9 h-9" src="../img/editar produto.png" alt=""></button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="w-[400px] h-[180px] bg-white flex flex-row rounded-[26px]">
-                <div class="info flex flex-col gap-3 pl-5">
-                    <h1>combo 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="info2 flex flex-row gap-56">
-                        <p>valor: R$50,00</p>
-                        <a href="./editarPromocao.html" target="_blank"><button ><img class="w-9 h-9" src="../img/editar produto.png" alt=""></button></a>
-                    </div>
-                </div>
-            </div>
+    <main  class="flex flex-row gap-60 items-start justify-center ">
+        <div class=" w-[90%]">
+            <div class="prontos flex flex-row gap-[40px] justify-center items-center flex-wrap pt-24 "id="promo">
+            
+                <button><img src="../img/adicionar produto.png" alt="" id="adicionar"></button>
         </div>
-      
-         <div class="barra w-[15px] h-[91vh] bg-white">
-         </div>
-
-        <div class="prontos flex flex-col gap-[40px] justify-center items-center">
-            <div class="w-[400px] h-[180px] bg-white flex flex-row rounded-[26px]">
-                <div class="info flex flex-col gap-3 pl-5">
-                    <h1>combo 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="info2 flex flex-row gap-56">
-                        <p>valor: R$50,00</p>
-                        <a href="./editarPromocao.html" target="_blank"><button ><img class="w-9 h-9" src="../img/editar produto.png" alt=""></button></a>
-                    </div>
-                </div>
-            </div> 
-            <a href="./adicionarPromocao.html" target="_blank"><button><img src="../img/adicionar produto.png" alt=""></button></a>
         </div>
         
     </main>
