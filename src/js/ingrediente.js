@@ -217,7 +217,7 @@ export async function putCombo(ComboId, Combo){
         body: JSON.stringify(Combo)
     }
     const response = await fetch(url, options)
-console.log(response);
+
     return response.ok
 }
 

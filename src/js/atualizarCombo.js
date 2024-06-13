@@ -13,6 +13,7 @@ nomeCampo.value = infoCombo.titulo
 descricaoCampo.value = infoCombo.descricaoCombo
 precoCampo.value = infoCombo.precoCombo
 
+console.log(infoCombos);
 
 const button = document.querySelector('button')
 button.addEventListener('click',async ()=>{
@@ -21,10 +22,11 @@ button.addEventListener('click',async ()=>{
         fotoCombo: imagemCampo.value,
         precoCombo: precoCampo.value,
         descricaoCombo: descricaoCampo.value,
-
     }
+
+
     const result = await putCombo(idCombo,json)
-    // console.log(result);
+
     if(result){
         window.location.href='../pages/combos.html'
     } else {
