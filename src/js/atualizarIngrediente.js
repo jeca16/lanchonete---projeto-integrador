@@ -9,7 +9,6 @@ const marcaCampo = document.getElementById('marca')
 const validadeCampo = document.getElementById('validade')
 const quantidadeCampo = document.getElementById('quantidade')
 
-
 nomeCampo.value = infoIngrediente.ingredientes[0].nome_ingrediente
 marcaCampo.value = infoIngrediente.ingredientes[0].marca_ingredientes
 quantidadeCampo.value = infoIngrediente.ingredientes[0].quantidade_ingredientes

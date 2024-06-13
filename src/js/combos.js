@@ -38,7 +38,7 @@ function criarTabela(combo) {
     })
 
     iconeAtualizar.addEventListener('click',()=>{
-        window.location.href='../pages/atualizarCombo.html?idProduto='+combo.idCombo
+        window.location.href='../pages/atualizarCombo.html?idCombo='+combo.idCombo
     })
 
     preco.appendChild(divIcones)

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../output.css">
-    <script src="../js/atualizarCombo.js"></script>
+    <script src="../js/atualizarCombo.js" defer type="module"></script>
     <link rel="stylesheet" href="../css/editarIngrediente.css">
     <link rel="icon" href="../img/logo.png">
     <title>Sabor & Prazer</title>
@@ -21,11 +21,10 @@
        <div class="info flex flex-col gap-14 items-center justify-center">
 
         <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="img">
-        <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="titulo">
-        <textarea name="descricao" id="descricao" cols="80" rows="10" class="rounded-full resize-none"></textarea>
+        <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="nome">
+        <textarea name="descricao" id="descricao" cols="80" rows="10" class="rounded-full resize-none outline-none"></textarea>
         <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="preco">
-        <input type="text" class="w-[30vw] h-[5vh] rounded-full" id="produtos">
-        <button class="w-[30vw] h-[8vh] bg-[#5EAA65] rounded-full text-[#FFFF] font-acme text-4xl "> Atualizar produto</button>
+        <button class="w-[30vw] h-[8vh] bg-[#5EAA65] rounded-full text-[#FFFF] font-acme text-4xl "> Atualizar combo</button>
        </div>
     </main>
     

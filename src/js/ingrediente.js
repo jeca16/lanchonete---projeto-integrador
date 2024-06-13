@@ -29,9 +29,11 @@ export async function postIngrediente(ingrediente){
 
 
 export async function putIngrediente(ingredienteId, ingrediente){
-    const url = `http://localhost:8080/v1/lanchonete/editeIngrediente/${ingredienteId}`
     console.log(ingredienteId);
     console.log(ingrediente)
+    const url = `http://localhost:8080/v1/lanchonete/editeIngrediente/${ingredienteId}`
+    // console.log(ingredienteId);
+    // console.log(ingrediente)
     const options = {
         method: 'PUT',
         headers: {
@@ -204,9 +206,9 @@ export async function postCombo(Combo){
 
 
 export async function putCombo(ComboId, Combo){
-    const url = `http://localhost:8080/v1/lanchonete/editeCombo/${Combo}`
-    console.log(ComboId);
-    console.log(Combo)
+    const url = `http://localhost:8080/v1/lanchonete/editeCombo/${ComboId}`
+    // console.log(ComboId);
+    // console.log(Combo)
     const options = {
         method: 'PUT',
         headers: {
@@ -215,6 +217,7 @@ export async function putCombo(ComboId, Combo){
         body: JSON.stringify(Combo)
     }
     const response = await fetch(url, options)
+console.log(response);
     return response.ok
 }
 
